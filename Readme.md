@@ -1,7 +1,7 @@
 # Личный проект «Кекстаграм» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Юлия Смирнова](https://up.htmlacademy.ru/javascript/7/user/136512).
-* Наставник: `Неизвестно`.
+* Наставник: `Максим Ерехинский`.
 
 ---
 
