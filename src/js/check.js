@@ -12,7 +12,7 @@ function getMessage(a, b) {
     for (var i = 0; i < a.length; i++) {
       artifactsSquare = artifactsSquare + a[i] * b[i];
     }
-    return 'Общая площадь артефактов сжатия: " + artifactsSquare + " пикселей';
+    return 'Общая площадь артефактов сжатия: ' + artifactsSquare + ' пикселей';
   } else if (Array.isArray(a)) {
     var amountOfRedPoints = a.reduce(function(sum, current) {
       return sum + current;
@@ -23,6 +23,5 @@ function getMessage(a, b) {
   }
 }
 
-getMessage();
 
 
