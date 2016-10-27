@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 "use strict";
 
 function getMessage(a, b) { 
@@ -28,3 +29,36 @@ function getMessage(a, b) {
                             return "Переданы некорректные данные"; 
                         } 
 }
+=======
+'use strict';
+
+function getMessage(a, b) {
+  if (a === true) {
+    return 'Переданное GIF-изображение анимировано и содержит [b] кадров';
+  } else if (a === false) {
+    return 'Переданное GIF-изображение не анимировано';
+  } else if (typeof a === 'number') {
+    return 'Переданное SVG-изображение содержит [a] объектов и [b * 4] атрибутов';
+  } else if (Array.isArray(a) && Array.isArray(b)) {
+    var artifactsSquare = 0;
+    for (var i = 0; i < a.length; i++) {
+      artifactsSquare = artifactsSquare + a[i] * b[i];
+    }
+    return 'Общая площадь артефактов сжатия: ' + artifactsSquare + ' пикселей';
+  } else if (Array.isArray(a)) {
+    var amountOfRedPoints = a.reduce(function(sum, current) {
+      return sum + current;
+    });
+    return 'Количество красных точек во всех строчках изображения: ' + amountOfRedPoints;
+  } else {
+    return 'Переданы некорректные данные';
+  }
+}
+
+window.getMessage = getMessage;
+
+
+
+
+
+>>>>>>> 518eadfe95a518fae5a86fce4c746843dfaa2eae
