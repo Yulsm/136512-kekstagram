@@ -36,7 +36,7 @@
 
       // Изначально предлагаемое кадрирование — часть по центру с размером в 3/4
       // от размера меньшей стороны.
-     this._resizeConstraint = new Square(
+      this._resizeConstraint = new Square(
           this._container.width / 2 - side / 2,
           this._container.height / 2 - side / 2,
           side);
@@ -125,7 +125,7 @@
 
       // Отрисовка прямоугольника, обозначающего область изображения после
       // кадрирования. Координаты задаются от центра.
-     this._ctx.strokeRect(
+      this._ctx.strokeRect(
        (-this._resizeConstraint.side / 2) - this._ctx.lineWidth / 2,
        (-this._resizeConstraint.side / 2) - this._ctx.lineWidth / 2,
        this._resizeConstraint.side - this._ctx.lineWidth / 2,
